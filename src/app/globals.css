@@ -1,0 +1,429 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  /* brands */
+  --main-color: #1E1E1E;
+  --fahdu-main: #FFA86B;
+}
+
+/* css reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img, picture, svg, video {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-rubik);
+  color: var(--main-color);
+}
+input {
+  outline: none;
+  border: none;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+/* signup */
+.login_title {
+  font-size: 35px;
+  line-height: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.login_subtitle {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.login_subtitle span {
+  font-weight: 600;
+}
+.brands_input::placeholder {
+  color: #B2B2B2;
+}
+/* .brands_input {
+  border: 2px solid var(--main-color);
+  border-radius: 14px;
+  height: 54px;
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.6px;
+  margin-bottom: 5px;
+} */
+
+input[type="number"]::-webkit-inner-spin-button,
+     input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+
+.brands_input:focus {
+  box-shadow: 3px 3px 0 0 var(--main-color);
+}
+.brands_label {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.login_button {
+  height: 54px;
+  border-radius: 14px;
+  border: 2px solid var(--main-color);
+  box-shadow: 3px 3px 0 0 var(--main-color);
+  background-color: var(--fahdu-main);
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+}
+.login_divider {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.login_divider::before {
+  content: '';
+  height: 1.5px;
+  background-color: var(--main-color);
+  width: 50%;
+}
+.login_divider::after {
+  content: '';
+  height: 1.5px;
+  background-color: var(--main-color);
+  width: 50%;
+}
+.continue_with_google {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  height: 54px;
+  background-color: white;
+  border: 2px solid var(--main-color);
+  box-shadow: 3px 3px 0 0 var(--fahdu-main),5px 5px 0 0 var(--main-color);
+}
+
+/* new globals from angular */
+ /* new brands design starts  */
+/* / signup / */
+.login_spp_section {
+  width: 621px;
+  display: flex;
+  gap: 20px;
+}
+.login_spp_left_sub_sec {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login_spp_right_sub_sec {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 10px;
+}
+.login_spp_brands_1 {
+  width: 294px;
+  height: 593px;
+}
+.login_spp_brands_t_1 {
+  width: 294px;
+  height: 128px;
+}
+.login_spp_fahdu_text_1 {
+  width: 284px;
+  height: 83px;
+}
+.login_spp_brands_2 {
+  width: 300px;
+  height: 295px;
+}
+.login_spp_brands_3 {
+  width: 300px;
+  height: 275px;
+}
+.login_spp_brands_rec {
+  width: 300px;
+  height: 295px;
+  position: absolute;
+  z-index: -1;
+  left: 7px;
+  top: 7px;
+}
+
+.main_login_sec_wrapper {
+  width: 507px;
+  font-family: RubikRegular, "Helvetica Neue", sans-serif !important;
+}
+.new_login_form_sec {
+  display: flex;
+  flex-direction: column;
+}
+.new_login_sub_block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.google_icon_im {
+  width: 21px;
+  height: 21px;
+}
+.do_u_h_acc {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+}
+.do_u_h_acc, .redirect_to_signup {
+  color: #FFA86B;
+  font-weight: 600;
+}
+.do_u_h_acc, .redirect_to_signup:hover {
+  text-decoration: underline;
+}
+.continue_with_google_tw {
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  border-radius: 14px;
+}
+.new_login_fg_pss {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-left: auto;
+  margin-top: 5px;
+}
+.new_login_reme_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.new_login_reme_wrapper, .remme_input {
+  width: 21px;
+  height: 21px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.new_login_reme_wrapper, .remme_text {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+}
+.passowrd_eye_icon {
+  right: 20px;
+  top: 0;
+  bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brands_pass_show {
+  width: 18px;
+  height: 10px;
+}
+.brands_pass_hide {
+  width: 18px;
+  height: 18px;
+}
+
+
+
+
+.login_title {
+  font-size: 35px;
+  line-height: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: RubikBold, "Helvetica Neue", sans-serif;
+}
+.login_subtitle {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.login_subtitle span {
+  font-weight: 600;
+}
+.brands_input::placeholder {
+  color: #B2B2B2;
+}
+.brands_input {
+  border: 2px solid var(--main-color);
+  border-radius: 14px;
+  height: 54px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.6px;
+  margin-bottom: 5px;
+}
+.brands_form_title {
+  font-family: 'RubikMedium', "Helvetica Neue", sans-serif;
+  font-size: 37px;
+  line-height: 41px;
+  font-weight: 600;
+  color: #000;
+}
+.brands_input_wrapper, .brands_form_title{
+  margin-bottom: 20px;
+}
+.brands_enquiry_file,.brands_input,.brands_enquiry_textarea, .brands_input{
+  margin-bottom: 25px;
+}
+.brands_enquiry_textarea,  .brands_input {
+  height: 118px;
+  width: 100%;
+  resize: none;
+  outline: none;
+  box-shadow: none;
+}
+.brands_enquiry_file, .brands_input {
+  height: 63px;
+  width: 100%;
+}
+.brands_input,  .brands_password_input {
+ padding-right: 50px;
+}
+.brands_input:focus, .brands_enquiry_textarea, .brands_input:focus {
+  box-shadow: 3px 3px 0 0 var(--main-color);
+}
+.error_vaidation {
+  position: absolute;
+  bottom: -14px;
+  left: 0px;
+  color: red;
+  font-size: 12px;
+  font-weight: 400;
+}
+.brands_label {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-family: RubikMedium, "Helvetica Neue", sans-serif;
+}
+.login_button {
+  height: 54px;
+  border-radius: 14px;
+  border: 2px solid var(--main-color);
+  box-shadow: 3px 3px 0 0 var(--main-color);
+  background-color: var(--fahdu-main);
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+  width: 100%;
+}
+.login_divider {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.login_divider::before {
+  content: '';
+  height: 1.5px;
+  background-color: var(--main-color);
+  width: 50%;
+}
+.login_divider::after {
+  content: '';
+  height: 1.5px;
+  background-color: var(--main-color);
+  width: 50%;
+}
+.continue_with_google {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  height: 54px;
+  background-color: white;
+  border: 2px solid var(--main-color);
+  box-shadow: 3px 3px 0 0 var(--fahdu-main),5px 5px 0 0 var(--main-color);
+  font-family: RubikMedium, "Helvetica Neue", sans-serif;
+}
+
+/* / brands enquiry page / */
+.new_brands_container {
+  max-width: 1498px;
+  margin: auto;
+  font-family: RubikRegular, "Helvetica Neue", sans-serif;
+}
+.brands_enquiry_section {
+  border: 3px solid #000;
+  border-radius: 30px;
+  background: white;
+  padding: 36px;
+  font-family: 'RubikRegular', "Helvetica Neue", sans-serif;
+}
+
+/* / VALIDATION CLASSES / */
+/* input.ng-invalid.ng-touched {
+  border: 2px solid red;
+}
+input.ng-invalid.ng-touched:focus {
+  box-shadow: 3px 3px 0 0 red;
+} */
+/* / new brands design ends / */
+
+
+/* campaign list */
+.table_head_item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.33px;
+  font-family: --font-rubik, "Helvetica Neue", sans-serif !important;
+  /* font-family: RubikMedium, "Helvetica Neue", sans-serif; */
+}
+.table_camp_btn {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15.41px;
+}

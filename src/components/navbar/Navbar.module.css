@@ -1,0 +1,92 @@
+<<<<<<< HEAD
+/* 
+h3 {
+=======
+
+/* h3 {
+>>>>>>> 8ba51bae5fb1d6bdd4de9961cd2328a16bfed345
+    font-family: var(--font-rubik);
+  }
+  p {
+    font-family: var(--font-rubik);
+  } */
+    
+.new_br_navbar {
+  padding: 40px 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.new_brands_icon {
+  width: 147px;
+  height: auto;
+}
+.new_brnd_navlist {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  align-items: center;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.new_brnd_navlist, .navlist_item {
+  color: #707070;
+}
+.new_brnd_navlist{
+  cursor: pointer; 
+  font-weight: 700;
+  color: #000;
+}
+.navlist_item_a:active {
+  font-weight: 700;
+  color: #000;
+  border-bottom: 2px solid #000;
+  cursor: pointer;
+}
+.navlist_item a:not(:active):hover {
+  font-weight: 700;
+  color: #000;
+  border-bottom: 2px solid #000;
+  cursor: pointer;
+}
+
+
+.brands_details {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.brands_details, .brands_username {
+  font-family: RubikMedium, "Helvetica Neue", sans-serif;
+  margin-right: 20px;
+}
+.brands_details, .brands_username,
+.new_brnd_navlist, .navlist_item {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+}
+.brands_details, .brands_profile_img{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  object-fit: cover;
+}
+.brands_logout_btn {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin-left: 20px;
+}
+.brands_logout_btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}

@@ -1,0 +1,168 @@
+
+  .creatos_card_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    font-family: RubikMedium, "Helvetica Neue", sans-serif;
+  
+  }
+  .creators_card_item {
+    border-radius: 30px;
+    border: 3px solid #1e1e1e;
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    width: 100%;
+  }
+  .creators_crc_dp {
+    width: 156px;
+    height: 156px;
+    border-radius: 20px;
+    border: 2px solid #1e1e1e;
+    object-fit: cover;
+    margin-right: 35px;
+  }
+  .creators_card_top {
+    display: flex;
+    align-items: center;
+  }
+  .creators_details_block {
+    display: grid;
+    align-items: start;
+    grid-gap: 10px;
+  }
+  .creators_niche {
+    border: 1px solid #1e1e1e;
+    background-color: #FAFFBB;
+    border-radius: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    height: 30px;
+  }
+  .creators_niche span {
+    font-size: 12px;
+    line-height: 14px;
+    color: #1e1e1e;
+  }
+  .crc_name {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #1e1e1e;
+    font-family: RubikSemiBold, "Helvetica Neue", sans-serif;
+  }
+  .crc_username_wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .crc_insta {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+  .crc_username {
+    color: #2143F7;
+    text-decoration: underline;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 500;
+  }
+  .crc_pqs_wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .crc_pqs_title {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #1e1e1e;
+  }
+  .crc_pqs_info {
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    margin-right: 15px;
+  }
+  .crc_pqs_rating {
+    font-size: 15px;
+    line-height: 17px;
+    color: #1e1e1e;
+    font-weight: 500;
+  }
+  .crc_pqs_rating span {
+    color: #0FB900;
+  }
+  
+  .creators_card_middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px dashed #1e1e1e;
+    padding: 20px 0;
+    border-radius: 20px;
+  }
+  .creators_card_middle_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .creators_card_middle_item, .m_img {
+    width: 46px;
+    height: 46px;
+    border-radius: 8px;
+  }
+  .creators_card_middle_item, .m_followers {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    color: #1e1e1e;
+  }
+  .creators_card_middle_item, .m_followers_count          {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #1e1e1e;
+  }
+  .creators_card_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .creators_card_bottom_l {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 10px;
+  }
+  .creators_card_bottom_l, .m_country_icon {
+    width: 27px;
+    height: 27px;
+  }
+  .creators_card_bottom_l, .m_country_name {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+  .creators_card_bottom_r {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 25px;
+    align-items: center;
+  }
+  .creators_card_bottom_r  {
+    width: 18px;
+    height: 18px;
+  }
+  .m_creators_call{
+    width: 18px;
+    height: 18px;
+  }
+  .creators_card_bottom_r, .m_creators_email {
+    width: 21.33px;
+    height: 16px;
+  }
+  

@@ -1,0 +1,20 @@
+
+  .approved:hover {
+    background: #FFA86B;
+    box-shadow: 4px 4px 0px 0px #000;
+}
+.approved {
+  border-radius: 14px;
+  border: 2px solid #000;
+  background: #FFF;
+  color: #000;
+  font-family: var(--font-rubik);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21.33px; 
+  width: 200px;
+  height: 48px;
+  flex-shrink: 0;
+  padding: 0 20px;
+}

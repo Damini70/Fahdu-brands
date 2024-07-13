@@ -1,0 +1,52 @@
+.modal{
+    padding:80px 77px;
+    border-radius: 32px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.heading{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.p{
+    font-size: 1.3rem;
+}
+.p span{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    margin-top:2rem
+}
+.in{
+    border:2px solid black;
+    width:64px;
+    height:64px;
+    font-size: 2rem;
+    border-radius: 16px;
+   text-align: center;
+}
+.filled{
+    border:2px solid #FF7F50;
+}
+.code{
+    font-weight: bold;
+    font-size: 1.3rem;
+
+}
+.btn{
+    width:503px;
+    height:54px;
+    border-radius: 14px;
+    border: 3px solid black;
+    margin-top:10px;
+    font-weight: bold;
+    font-size: 1.3rem; 
+    box-shadow: 4px 4px 0 0 #000;
+}

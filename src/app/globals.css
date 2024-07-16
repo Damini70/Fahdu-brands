@@ -7,12 +7,14 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   /* brands */
-  --main-color: #1E1E1E;
-  --fahdu-main: #FFA86B;
+  --main-color: #1e1e1e;
+  --fahdu-main: #ffa86b;
 }
 
 /* css reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 * {
@@ -20,7 +22,10 @@
   padding: 0;
   font: inherit;
 }
-img, picture, svg, video {
+img,
+picture,
+svg,
+video {
   max-width: 100%;
   display: block;
 }
@@ -50,7 +55,6 @@ input {
   }
 }
 
-
 /* signup */
 .login_title {
   font-size: 35px;
@@ -68,7 +72,7 @@ input {
   font-weight: 600;
 }
 .brands_input::placeholder {
-  color: #B2B2B2;
+  color: #b2b2b2;
 }
 /* .brands_input {
   border: 2px solid var(--main-color);
@@ -82,11 +86,10 @@ input {
 } */
 
 input[type="number"]::-webkit-inner-spin-button,
-     input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 .brands_input:focus {
   box-shadow: 3px 3px 0 0 var(--main-color);
@@ -118,13 +121,13 @@ input[type="number"]::-webkit-inner-spin-button,
   gap: 15px;
 }
 .login_divider::before {
-  content: '';
+  content: "";
   height: 1.5px;
   background-color: var(--main-color);
   width: 50%;
 }
 .login_divider::after {
-  content: '';
+  content: "";
   height: 1.5px;
   background-color: var(--main-color);
   width: 50%;
@@ -136,11 +139,11 @@ input[type="number"]::-webkit-inner-spin-button,
   height: 54px;
   background-color: white;
   border: 2px solid var(--main-color);
-  box-shadow: 3px 3px 0 0 var(--fahdu-main),5px 5px 0 0 var(--main-color);
+  box-shadow: 3px 3px 0 0 var(--fahdu-main), 5px 5px 0 0 var(--main-color);
 }
 
 /* new globals from angular */
- /* new brands design starts  */
+/* new brands design starts  */
 /* / signup / */
 .login_spp_section {
   width: 621px;
@@ -212,11 +215,13 @@ input[type="number"]::-webkit-inner-spin-button,
   text-align: center;
   margin-top: 20px;
 }
-.do_u_h_acc, .redirect_to_signup {
-  color: #FFA86B;
+.do_u_h_acc,
+.redirect_to_signup {
+  color: #ffa86b;
   font-weight: 600;
 }
-.do_u_h_acc, .redirect_to_signup:hover {
+.do_u_h_acc,
+.redirect_to_signup:hover {
   text-decoration: underline;
 }
 .continue_with_google_tw {
@@ -241,13 +246,15 @@ input[type="number"]::-webkit-inner-spin-button,
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.new_login_reme_wrapper, .remme_input {
+.new_login_reme_wrapper,
+.remme_input {
   width: 21px;
   height: 21px;
   border-radius: 6px;
   cursor: pointer;
 }
-.new_login_reme_wrapper, .remme_text {
+.new_login_reme_wrapper,
+.remme_text {
   font-size: 18px;
   line-height: 21px;
   font-weight: 500;
@@ -269,9 +276,6 @@ input[type="number"]::-webkit-inner-spin-button,
   height: 18px;
 }
 
-
-
-
 .login_title {
   font-size: 35px;
   line-height: 42px;
@@ -289,7 +293,7 @@ input[type="number"]::-webkit-inner-spin-button,
   font-weight: 600;
 }
 .brands_input::placeholder {
-  color: #B2B2B2;
+  color: #b2b2b2;
 }
 .brands_input {
   border: 2px solid var(--main-color);
@@ -302,33 +306,42 @@ input[type="number"]::-webkit-inner-spin-button,
   margin-bottom: 5px;
 }
 .brands_form_title {
-  font-family: 'RubikMedium', "Helvetica Neue", sans-serif;
+  font-family: "RubikMedium", "Helvetica Neue", sans-serif;
   font-size: 37px;
   line-height: 41px;
   font-weight: 600;
   color: #000;
 }
-.brands_input_wrapper, .brands_form_title{
+.brands_input_wrapper,
+.brands_form_title {
   margin-bottom: 20px;
 }
-.brands_enquiry_file,.brands_input,.brands_enquiry_textarea, .brands_input{
+.brands_enquiry_file,
+.brands_input,
+.brands_enquiry_textarea,
+.brands_input {
   margin-bottom: 25px;
 }
-.brands_enquiry_textarea,  .brands_input {
+.brands_enquiry_textarea,
+.brands_input {
   height: 118px;
   width: 100%;
   resize: none;
   outline: none;
   box-shadow: none;
 }
-.brands_enquiry_file, .brands_input {
+.brands_enquiry_file,
+.brands_input {
   height: 63px;
   width: 100%;
 }
-.brands_input,  .brands_password_input {
- padding-right: 50px;
+.brands_input,
+.brands_password_input {
+  padding-right: 50px;
 }
-.brands_input:focus, .brands_enquiry_textarea, .brands_input:focus {
+.brands_input:focus,
+.brands_enquiry_textarea,
+.brands_input:focus {
   box-shadow: 3px 3px 0 0 var(--main-color);
 }
 .error_vaidation {
@@ -368,13 +381,13 @@ input[type="number"]::-webkit-inner-spin-button,
   gap: 15px;
 }
 .login_divider::before {
-  content: '';
+  content: "";
   height: 1.5px;
   background-color: var(--main-color);
   width: 50%;
 }
 .login_divider::after {
-  content: '';
+  content: "";
   height: 1.5px;
   background-color: var(--main-color);
   width: 50%;
@@ -386,7 +399,7 @@ input[type="number"]::-webkit-inner-spin-button,
   height: 54px;
   background-color: white;
   border: 2px solid var(--main-color);
-  box-shadow: 3px 3px 0 0 var(--fahdu-main),5px 5px 0 0 var(--main-color);
+  box-shadow: 3px 3px 0 0 var(--fahdu-main), 5px 5px 0 0 var(--main-color);
   font-family: RubikMedium, "Helvetica Neue", sans-serif;
 }
 
@@ -401,7 +414,7 @@ input[type="number"]::-webkit-inner-spin-button,
   border-radius: 30px;
   background: white;
   padding: 36px;
-  font-family: 'RubikRegular', "Helvetica Neue", sans-serif;
+  font-family: "RubikRegular", "Helvetica Neue", sans-serif;
 }
 
 /* / VALIDATION CLASSES / */
@@ -412,7 +425,6 @@ input.ng-invalid.ng-touched:focus {
   box-shadow: 3px 3px 0 0 red;
 } */
 /* / new brands design ends / */
-
 
 /* campaign list */
 .table_head_item {

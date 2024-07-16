@@ -3,16 +3,15 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Rubik } from "next/font/google";
 import Authprovider from "../component/AuthProvider/Authprovider";
-import  {ReduxProvider} from '../Provider';
-
-
+import { ReduxProvider } from "../Provider";
+import Navbar from "../components/navbar/Navbar";
 
 // fonts
 const rubik = Rubik({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-rubik"
-})
+  variable: "--font-rubik",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,17 +23,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
- 
   return (
-  
     <html lang="en">
-      
       <body className={`${rubik.variable}`}>
-      <ReduxProvider>
-        <Authprovider> {children}</Authprovider>
-      </ReduxProvider>
-        </body>
-        
+        <ReduxProvider>
+          <Authprovider>
+            {" "}
+            <Navbar />
+            {children}
+          </Authprovider>
+        </ReduxProvider>
+      </body>
     </html>
   );
 }

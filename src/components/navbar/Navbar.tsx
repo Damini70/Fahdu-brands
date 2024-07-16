@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useState } from "react";
 import style from "./Navbar.module.css";
@@ -35,20 +36,22 @@ export default function Navbar() {
     router.push("/login");
   }
 
-  // console.log("user",user);
+  console.log("user", user);
 
   return (
     <>
       {
-        <div className={`${style.new_br_navbar} new_brands_container flex p-6`}>
-          <div className="w-[25%]">
+        <div
+          className={`${style.new_br_navbar} new_brands_container flex p-10 m-10`}
+        >
+          <div className="w-[30%]">
             <img
               className={style.new_brands_icon}
               src="/images/logo.svg"
               alt="fahdu icon"
             />
           </div>
-          <div className="flex gap-8 mt-[15px]">
+          <div className="flex gap-20 mt-[15px]">
             <Link href="/">
               <p className="font-semibold text-[18px] text-[#707070]">
                 Brand Enquiry
@@ -59,14 +62,11 @@ export default function Navbar() {
             </Link>
           </div>
           {user?.isLogged ? (
-            <div
-              className={`w-[15%] ${style.brands_details}`}
-              style={{ position: "relative" }}
-            >
-              <h2 className={style.brands_username}>{user?.user?.fullName}</h2>
+            <div className={`w-[15%] ${style.brands_details} ml-auto`}>
+              <h2 className={style.brands_username}>{user?.username}</h2>
               <img
                 className={style.brands_profile_img}
-                src={user?.user?.profile_image.url}
+                src={user?.image}
                 alt="user picture"
               />
 

@@ -174,3 +174,32 @@
   width: 21.33px;
   height: 16px;
 }
+.choose_file_block {
+  display: grid;
+  align-items: center;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+  width: fit-content;
+  margin: auto;
+  height: 100%;
+}
+
+.choose_file_block img {
+  width: 20px;
+  height: 20px;
+}
+
+.choose_file_block .file_text .file_divider {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #707070;
+}
+.file_divider {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #707070;
+}
+
+

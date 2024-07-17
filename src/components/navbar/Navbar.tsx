@@ -44,14 +44,14 @@ export default function Navbar() {
         <div
           className={`${style.new_br_navbar} new_brands_container flex p-10 m-10`}
         >
-          <div className="w-[30%]">
+          <div className="w-[20%]">
             <img
               className={style.new_brands_icon}
               src="/images/logo.svg"
               alt="fahdu icon"
             />
           </div>
-          <div className="flex gap-20 mt-[15px]">
+          <div className="flex gap-8 mt-[15px] content-center">
             <Link href="/">
               <p className="font-semibold text-[18px] text-[#707070]">
                 Brand Enquiry

@@ -37,57 +37,71 @@ export default function BrandsEnquiry() {
     }
   }, [watchFile]);
 
-  const onSubmit = async (data: any) => {
-    const formData = new FormData();
-    formData.append("file", watchFile[0]);
+  // const onSubmit = async (data: any) => {
+  //   const formData = new FormData();
+  //   formData.append("file", watchFile[0]);
 
-    setLoading(true);
+  //   setLoading(true);
+  //   try {
+  //     const uploadImage = await axios.post(
+  //       `${process.env.NEXT_PUBLIC_BASE_URL}/api/upload`,
+  //       formData,
+  //       {
+  //         headers: {
+  //           "Content-Type": "multipart/form-data",
+  //           Authorization: `Bearer ${token}`,
+  //         },
+  //       }
+  //     );
+
+  //     if (uploadImage?.data) {
+  //       const logoUrl = uploadImage?.data?.data?.url;
+  //       const updatedDetails = {
+  //         brandName: data.username,
+  //         instaHandle: data.instagramHandle,
+  //         campaignObjective: data.campaignObjective,
+  //         brandDescription: data.brandDescription,
+  //         loc: data.location,
+  //         influencerRange: data.influencerCategory,
+  //         creatorInterest: data.creatorInterest,
+  //         logoimage: logoUrl,
+  //         keyName: "Damini",
+  //       };
+
+  //       const enquiryResponse = await axios.post(
+  //         `${process.env.NEXT_PUBLIC_BASE_URL}/api/brand/enquiry/create`,
+  //         updatedDetails,
+  //         {
+  //           headers: {
+  //             "Content-Type": "application/json",
+  //             Authorization: `Bearer ${token}`,
+  //           },
+  //         }
+  //       );
+
+  //       if (enquiryResponse?.data) {
+  //         toast.success("Brand created successfully");
+  //         router.push("/campaigndetails");
+  //       }
+  //     }
+  //   } catch (error: any) {
+  //     toast.error(error?.response?.data?.message);
+  //   } finally {
+  //     setLoading(false); // Set loading to false after the operation completes
+  //   }
+  // };
+
+  const onSubmit = async () => {
     try {
-      const uploadImage = await axios.post(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/api/upload`,
-        formData,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
-
-      if (uploadImage?.data) {
-        const logoUrl = uploadImage?.data?.data?.url;
-        const updatedDetails = {
-          brandName: data.username,
-          instaHandle: data.instagramHandle,
-          campaignObjective: data.campaignObjective,
-          brandDescription: data.brandDescription,
-          loc: data.location,
-          influencerRange: data.influencerCategory,
-          creatorInterest: data.creatorInterest,
-          logoimage: logoUrl,
-          keyName: "Damini",
-        };
-
-        const enquiryResponse = await axios.post(
-          `${process.env.NEXT_PUBLIC_BASE_URL}/api/brand/enquiry/create`,
-          updatedDetails,
-          {
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${token}`,
-            },
-          }
-        );
-
-        if (enquiryResponse?.data) {
-          toast.success("Brand created successfully");
-          router.push("/campaigndetails");
-        }
+      const response = await axios.post("https://dummyjson.com/posts/add", {
+        title: "I am in love with someone.",
+        userId: 5,
+      });
+      if (response) {
+        router.push('/campaigndetails')
       }
-    } catch (error: any) {
-      toast.error(error?.response?.data?.message);
-    } finally {
-      setLoading(false); // Set loading to false after the operation completes
+    } catch (err) {
+      toast.error("Some error occur");
     }
   };
 

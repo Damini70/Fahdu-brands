@@ -1,20 +1,35 @@
-import React from 'react';
-import style from './Creatorlist.module.css';
-import Creator from '@/src/components/creator/Creator';
+import React from "react";
+import style from "./Creatorlist.module.css";
+import Creator from "@/src/components/creator/Creator";
 
-export default function CreatorList() {
+interface MyComponentProps {
+  show: boolean;
+}
+
+const CreatorList: React.FC<MyComponentProps> = ({ show }) => {
   return (
     <>
-    <div className={style.brands_p_section}>
-    <div className="new_brands_container">
-    <Creator/>
-    <Creator/>
-    <Creator/>
-    <Creator/>
-    <Creator/>
-    <Creator/>
-    </div>
-    </div>
+      <div
+        className={`${
+          show ? "style.brands_p_section" : "style.brands_p_section pt-[140px]"
+        }`}
+      >
+        <div
+          className={`${
+            show
+              ? "new_brands_container"
+              : "new_brands_container grid gap-4 grid-cols-3"
+          }`}
+        >
+          <Creator />
+          <Creator />
+          <Creator />
+          <Creator />
+          <Creator />
+          <Creator />
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
+export default CreatorList;

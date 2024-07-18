@@ -1,15 +1,17 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import style from "./new.module.css";
 import CreatorList from "../creatorlist/page";
+import InfluencerList from "@/src/components/influencerlist/InfluencerList";
 
 export default function CreatorNewList() {
+  const [influencer,showInfluecer]=useState(true)
   return (
     <>
       <main className="flex flex-col w-full ">
         <div className="p-6">
-          <div className="flex gap-4">
+          <div className="">
             <button className={style.approved}>
               <span className="px-[5px] border-[1px] rounded-full border-black bg-white mr-[10px]">
                 8
@@ -31,10 +33,12 @@ export default function CreatorNewList() {
           </div>
         </div>
         <div className="p-6 flex gap-6">
-          <div className="w-[75%]">
-            <CreatorList />
+          <div className="w-[68%]">
+            <InfluencerList />
           </div>
-          <div className="w-[25%]"></div>
+          <div className="w-[30%]">
+            <CreatorList show={influencer}/>
+          </div>
         </div>
       </main>
     </>

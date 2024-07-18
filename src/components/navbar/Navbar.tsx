@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 import style from "./Navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -30,13 +31,12 @@ export default function Navbar() {
   const [user, setUser] = useState(getUserFromLocalStorage);
   const dispatch = useDispatch();
   const router = useRouter();
+  const pathname = usePathname();
 
   function onLogOut() {
     dispatch(logout());
     router.push("/login");
   }
-
-  console.log("user", user);
 
   return (
     <>
@@ -52,13 +52,23 @@ export default function Navbar() {
             />
           </div>
           <div className="flex gap-8 mt-[15px] content-center">
-            <Link href="/">
-              <p className="font-semibold text-[18px] text-[#707070]">
+            <Link href="/brandenquiry">
+              <p
+                className={`font-semibold text-[18px] ${
+                  pathname === "/brandenquiry" ? "" : "text-[#707070]"
+                }`}
+              >
                 Brand Enquiry
               </p>
             </Link>
-            <Link href="/creatornewlist">
-              <p className="font-semibold text-[18px]">Campaign Details</p>
+            <Link href="/campaigndetails">
+              <p
+                className={`font-semibold text-[18px] ${
+                  pathname === "/campaigndetails" ? "" : "text-[#707070]"
+                }`}
+              >
+                Campaign Details
+              </p>
             </Link>
           </div>
           {user?.isLogged ? (

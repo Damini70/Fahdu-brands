@@ -2,6 +2,9 @@
   gap: 20px;
   font-family: RubikMedium, "Helvetica Neue", sans-serif;
 }
+.card {
+  box-sizing: border-box;
+}
 .creators_card_item {
   border-radius: 30px;
   border: 3px solid #1e1e1e;
@@ -34,7 +37,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
   height: 30px;
 }
 .creators_niche span {

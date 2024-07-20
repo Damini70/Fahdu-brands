@@ -1,7 +1,6 @@
-* {
-  font-weight: 500px;
-}
 .sidebar {
   font-size: 18px;
   height: 100%;
+  box-sizing: border-box;
+  border-right: 3px solid black;
 }

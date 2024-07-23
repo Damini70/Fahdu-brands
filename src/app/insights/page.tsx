@@ -9,6 +9,8 @@ import icon3 from "../../../public/images/Icon3.png";
 import vector from "../../../public/images/Vector.png";
 import Chart from "../../components/chart/Chart.js";
 import Chart1 from "../../components/chart/Chart1.js";
+import Chart3 from "../../components/chart/Chart3.js";
+import Chart4 from "../../components/chart/Chart4.js";
 import Image from "next/image";
 import style from "./insight.module.css";
 
@@ -28,7 +30,7 @@ export default function Insights() {
   return (
     <div className="flex h-screen">
       <div
-        className={`${style.sidebar} h-full w-[20%] p-6 font-semibold flex flex-col justify-between`}
+        className={`${style.sidebar} w-[20%] p-6 font-semibold flex flex-col justify-between`}
       >
         <div className="flex flex-col flex-grow">
           <div className="flex justify-center p-3">
@@ -106,6 +108,15 @@ export default function Insights() {
           {" "}
           <Chart />
           <Chart1 />
+        </div>
+        <div className="flex my-2">
+          <div>
+            <Chart3 />
+          </div>
+          <div>
+            <Chart4 title="Engagement rate" />
+            <Chart4 title="Cumulative Follower" />
+          </div>
         </div>
       </div>
     </div>

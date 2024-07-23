@@ -5,11 +5,11 @@ import Image from "next/image";
 function Chart() {
   return (
     <div
-      className={`${style.card} p-4 w-auto h-[256px] rounded-3xl border-2 border-black bg-[#FFF9F5]`}
+      className={`${style.card} p-3 w-auto h-auto rounded-3xl border-2 border-black bg-[#FFF9F5]`}
     >
       <div>
-        <p className="font-semibold m-2">PERSONAL INFORMATION</p>
-        <div className="flex ml-2 mt-4">
+        <p className="font-semibold m-1">PERSONAL INFORMATION</p>
+        <div className="flex ml-2 mt-3">
           <div>
             {" "}
             <img

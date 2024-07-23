@@ -1,7 +1,7 @@
 import React from "react";
 import img from "../../../public/images/Icon.png";
 import Image from "next/image";
-import style from "./chart.module.css";
+import style from "./chart1.module.css";
 
 export default function Chart1() {
   return (
@@ -15,7 +15,7 @@ export default function Chart1() {
             </div>
             <div className="flex justify-between">
               {" "}
-              <div className="mr-8">
+              <div className="mr-9">
                 <p className="font-semibold text-xs">Followers</p>
                 <span className="font-semibold text-xl">284.1M</span>
               </div>
@@ -32,7 +32,7 @@ export default function Chart1() {
             </div>
             <div className="flex justify-between">
               {" "}
-              <div className="mr-8">
+              <div className="mr-9">
                 <p className="text-xs font-semibold">Followers</p>
                 <span className="font-semibold text-xl">284.1M</span>
               </div>
@@ -52,7 +52,7 @@ export default function Chart1() {
             </div>
             <div className="flex justify-between">
               {" "}
-              <div className="mr-8">
+              <div className="mr-9">
                 <p className="text-xs font-semibold">Followers</p>
                 <span className="font-semibold text-xl">284.1M</span>
               </div>
@@ -69,7 +69,7 @@ export default function Chart1() {
             </div>
             <div className="flex justify-between">
               {" "}
-              <div className="mr-8">
+              <div className="mr-9">
                 <p className="text-xs font-semibold">Followers</p>
                 <span className="font-semibold text-xl">284.1M</span>
               </div>

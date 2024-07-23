@@ -12,7 +12,6 @@ import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { login } from "../../redux/auth/authSlice";
 
-
 export default function LoginPage() {
   const router = useRouter();
   const session = useSession();
@@ -63,7 +62,7 @@ export default function LoginPage() {
   return (
     <>
       <ToastContainer autoClose={10000} />
-      <div className="container login_section flex items-center justify-between max-w-[1280px] h-[100vh] m-auto max-md:justify-center">
+      <div className="container login_section flex items-center justify-between max-md:justify-center h-screen p-15">
         <div className="w-[621px] max-md:hidden">
           <LoginDesign />
         </div>

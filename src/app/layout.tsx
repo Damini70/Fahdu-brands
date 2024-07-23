@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const pathname = usePathname();
-  const showNavbar = pathname !== "/insights";
+  const showNavbar = pathname !== "/insights" && pathname !== "/login";
 
   return (
     <html lang="en">

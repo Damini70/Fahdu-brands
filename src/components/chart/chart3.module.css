@@ -1,0 +1,35 @@
+.win {
+  width: auto;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 12px;
+}
+.trophy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cont {
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid black;
+  align-items: center;
+  margin-top: 2px;
+}
+.detail {
+  position: relative;
+  margin-left: 1rem;
+  margin-right: auto;
+  top: 1rem;
+}
+.img {
+  width: 52px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-right: 1rem;
+}

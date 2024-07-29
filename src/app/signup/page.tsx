@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 import Link from "next/link"
 import React, { useEffect, useState ,useRef} from "react";
@@ -28,7 +29,6 @@ export default function SignupPage() {
     const [buttonDisabled, setButtonDisabled] = React.useState(false);
     const [isOtpModalOpen, setIsOtpModalOpen] = useState(false);
     const [otp, setOtp] = useState('');
-    // loading
     const [loading, setLoading] = React.useState(false);
     const [inputs, setInputs] = useState(['', '', '', '', '']);
     const inputRefs = useRef([]);
@@ -119,13 +119,13 @@ export default function SignupPage() {
     const focusNextInput = (currentIndex: any) => {
         const nextIndex = currentIndex + 1;
         if (nextIndex < inputs.length) {
-            document.getElementById(`input-${nextIndex}`).focus();
+            // document.getElementById(`input-${nextIndex}`).focus();
         }
     };
     const focusPrevInput = (currentIndex: any) => {
         const prevIndex = currentIndex - 1;
         if (prevIndex >= 0) {
-            document.getElementById(`input-${prevIndex}`).focus();
+            // document.getElementById(`input-${prevIndex}`).focus();
         }
       };
     

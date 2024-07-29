@@ -122,7 +122,7 @@ export default function LoginPage() {
                         <Image className="w-[21px] h-[21px]" src={"/icons/google-icon.svg"} alt="google icon" width={21} height={21} />
                         Continue with Google
                     </button> */}
-            <p className="text-[18px] leading-[21px] font-[500] text-center mt-[20px]">
+            {/* <p className="text-[18px] leading-[21px] font-[500] text-center mt-[20px]">
               Do you have an account?{" "}
               <Link
                 href={"/signup"}
@@ -130,7 +130,7 @@ export default function LoginPage() {
               >
                 SignUp
               </Link>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

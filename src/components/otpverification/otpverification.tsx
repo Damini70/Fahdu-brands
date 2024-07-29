@@ -80,13 +80,13 @@ export default function OtpVerification({email,isCreateNewPassword}:any) {
     const focusNextInput = (currentIndex: any) => {
         const nextIndex = currentIndex + 1;
         if (nextIndex < inputs.length) {
-            document.getElementById(`input-${nextIndex}`).focus();
+            // document.getElementById(`input-${nextIndex}`).focus();
         }
     };
     const focusPrevInput = (currentIndex: any) => {
         const prevIndex = currentIndex - 1;
         if (prevIndex >= 0) {
-            document.getElementById(`input-${prevIndex}`).focus();
+            // document.getElementById(`input-${prevIndex}`).focus();
         }
     };
 

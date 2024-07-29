@@ -18,7 +18,7 @@ const CreatorList: React.FC<MyComponentProps> = ({ show }) => {
           className={`${
             show
               ? "new_brands_container"
-              : "new_brands_container grid gap-4 grid-cols-3"
+              : "new_brands_container grid gap-4 md:grid-cols-2 lg:grid-cols-3"
           }`}
         >
           <Creator />

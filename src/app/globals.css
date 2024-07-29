@@ -337,7 +337,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .brands_input,
 .brands_password_input {
-  padding-right: 50px;
+  /* padding-right: 50px; */
 }
 .brands_input:focus,
 .brands_enquiry_textarea,
@@ -413,7 +413,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border: 3px solid #000;
   border-radius: 30px;
   background: white;
-  padding: 36px;
+  padding: 29px;
   font-family: "RubikRegular", "Helvetica Neue", sans-serif;
 }
 

@@ -42,52 +42,52 @@ export default function Navbar() {
     <>
       {
         <div
-          className={`${style.new_br_navbar} new_brands_container flex p-10 m-10`}
+          className={`${style.new_br_navbar} new_brands_container p-auto m-auto flex justify-between`}
         >
-          <div className="w-[20%]">
-            <img
-              className={style.new_brands_icon}
-              src="/images/logo.svg"
-              alt="fahdu icon"
-            />
-          </div>
-          <div className="flex gap-8 mt-[15px] content-center">
-            <Link href="/brandenquiry">
-              <p
-                className={`font-semibold text-[18px] ${
-                  pathname === "/brandenquiry" ? "" : "text-[#707070]"
-                }`}
-              >
-                Brand Enquiry
-              </p>
-            </Link>
-            <Link href="/campaigndetails">
-              <p
-                className={`font-semibold text-[18px] ${
-                  pathname === "/campaigndetails" ? "" : "text-[#707070]"
-                }`}
-              >
-                Campaign Details
-              </p>
-            </Link>
-          </div>
-          {user?.isLogged ? (
-            <div className={`w-[15%] ${style.brands_details} ml-auto`}>
-              <h2 className={style.brands_username}>{user?.username}</h2>
+          <div className="md:flex">
+            <div className="md:mr-[10rem]">
               <img
-                className={style.brands_profile_img}
-                src={user?.image}
-                alt="user picture"
+                className={style.new_brands_icon}
+                src="/images/logo.svg"
+                alt="fahdu icon"
               />
-
-              <button className={style.brands_logout_btn} onClick={onLogOut}>
-                {/* <img src="/icons/ul-signout.svg" alt="logout icon"/> */}
-                Logout
-              </button>
             </div>
-          ) : (
-            <></>
-          )}
+            <div className="flex gap-8 mt-[15px] content-center">
+              <Link href="/brandenquiry">
+                <p
+                  className={`font-semibold text-[18px] ${
+                    pathname === "/brandenquiry" ? "" : "text-[#707070]"
+                  }`}
+                >
+                  Brand Enquiry
+                </p>
+              </Link>
+              <Link href="/campaigndetails">
+                <p
+                  className={`font-semibold text-[18px] ${
+                    pathname === "/campaigndetails" ? "" : "text-[#707070]"
+                  }`}
+                >
+                  Campaign Details
+                </p>
+              </Link>
+            </div>
+          </div>
+          <div>
+            {user?.isLogged ? (
+              <div className={`md:w-[15%] ${style.brands_details} md:ml-auto`}>
+                {/* <h2 className={style.brands_username}>{user?.username}</h2> */}
+                <img
+                  className={style.brands_profile_img}
+                  src={user?.image}
+                  alt="user picture"
+                  onClick={onLogOut}
+                />
+              </div>
+            ) : (
+              <></>
+            )}
+          </div>
         </div>
       }
     </>

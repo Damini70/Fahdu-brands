@@ -9,7 +9,10 @@ export default function Home() {
   const [token, setToken] = useState("");
   const [allCampaign, setAllCampaign] = useState([]);
   useEffect(() => {
-    const user = localStorage.getItem("login");
+    let user 
+  if(window!==undefined){
+    user= localStorage.getItem("login");
+  }
     if (user) {
       const data = JSON.parse(user);
       setToken(data.token);
@@ -35,10 +38,5 @@ export default function Home() {
     fetchData();
   }, []);
 
-  return (
-    <>
-      <Navbar />
-      {allCampaign.length > 0 ? <CampaignList /> : <BrandsEnquiry />}
-    </>
-  );
+  return <>{allCampaign.length > 0 ? <CampaignList /> : <BrandsEnquiry />}</>;
 }

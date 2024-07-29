@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import logo from "../../../public/images/logo.svg";
 import icon from "../../../public/images/Icon.png";
 import icon1 from "../../../public/images/Icon1.png";
-import icon2 from "../../../public/images/Icon2.png";
+import icon2 from "../../../public/images/icon2.png";
 import icon3 from "../../../public/images/Icon3.png";
 import vector from "../../../public/images/Vector.png";
 import Chart from "../../components/chart/Chart.js";

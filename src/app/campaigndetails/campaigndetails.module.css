@@ -3,8 +3,8 @@
   border: 3px solid #000;
   border-radius: 30px;
   background: white;
-  padding: 40px;
-  font-family: 'RubikRegular', "Helvetica Neue", sans-serif;
+  padding: 29px;
+  font-family: "RubikRegular", "Helvetica Neue", sans-serif;
 }
 .brands_p_section {
   padding-top: 140px;
@@ -17,7 +17,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   font-family: RubikMedium, "Helvetica Neue", sans-serif;
-
 }
 .creators_card_item {
   border-radius: 30px;
@@ -46,7 +45,7 @@
 }
 .creators_niche {
   border: 1px solid #1e1e1e;
-  background-color: #FAFFBB;
+  background-color: #faffbb;
   border-radius: 46px;
   display: flex;
   align-items: center;
@@ -76,7 +75,7 @@
   margin-right: 20px;
 }
 .crc_username {
-  color: #2143F7;
+  color: #2143f7;
   text-decoration: underline;
   font-size: 13px;
   line-height: 15px;
@@ -105,7 +104,7 @@
   font-weight: 500;
 }
 .crc_pqs_rating span {
-  color: #0FB900;
+  color: #0fb900;
 }
 
 .creators_card_middle {
@@ -133,7 +132,7 @@
   font-weight: 500;
   color: #1e1e1e;
 }
-.creators_card_middle_item .m_followers_count          {
+.creators_card_middle_item .m_followers_count {
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
@@ -201,5 +200,3 @@
   font-weight: 400;
   color: #707070;
 }
-
-

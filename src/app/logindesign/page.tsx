@@ -2,7 +2,8 @@ import Image from "next/image";
 
 export default function LoginDesign() {
   return (
-    <div className="flex gap-[20px] h-screen m-5 p-10">
+    <div className="flex gap-[20px] h-screen m-5 p-auto
+    ">
       <div className="flex flex-col gap-[20px]">
         <Image
           src={"/images/brands-1.png"}

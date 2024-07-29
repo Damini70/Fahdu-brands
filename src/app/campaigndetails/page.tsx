@@ -9,7 +9,10 @@ import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/navigation";
 import Navbar from "@/src/components/navbar/Navbar";
 
-const user = localStorage.getItem("login");
+let user: any;
+if (window !== undefined) {
+  user = localStorage.getItem("login");
+}
 const influencerCategory = [
   "Nano (1K - 10K)",
   "Micro (10K - 50K)",
@@ -109,7 +112,7 @@ export default function CampaignDetails() {
   return (
     <>
       <ToastContainer autoClose={10000} />
-      <Navbar />
+
       <div className={style.brands_p_section}>
         <div className={`${style.brands_enquiry_section} new_brands_container`}>
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -204,7 +207,7 @@ export default function CampaignDetails() {
 
             <div className={`brands_enquiry_file brands_input`}>
               <select {...register("creatorCount", { required: true })}>
-                <option value="" >
+                <option value="">
                   Select Creators count for the collaboration
                 </option>
                 <option value="10 Creators">10 Creators</option>

@@ -9,7 +9,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/navigation";
 
-const user = localStorage.getItem("login");
+let user:any; 
+if(window!==undefined){
+  user=localStorage.getItem("login");
+}
 
 export default function BrandsEnquiry() {
   const [loading, setLoading] = useState(false);
@@ -98,7 +101,7 @@ export default function BrandsEnquiry() {
         userId: 5,
       });
       if (response) {
-        router.push('/campaigndetails')
+        router.push("/campaigndetails");
       }
     } catch (err) {
       toast.error("Some error occur");
@@ -108,7 +111,6 @@ export default function BrandsEnquiry() {
   return (
     <>
       <ToastContainer autoClose={6000} />
-      <Navbar />
       <div className={style.brands_p_section}>
         <div className={`${style.brands_enquiry_section} new_brands_container`}>
           <h2 className="brands_form_title">Brand</h2>
